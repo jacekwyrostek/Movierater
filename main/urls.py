@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import test_response
+from .views import movieList
 
 urlpatterns = [
-    path('test/', test_response)
+    path('list/', movieList)
 ]

@@ -20,16 +20,12 @@
     </ul>
   </header>
   <body>
-    <h1>Movie List:</h1>
-    {%for movie in movies%}
+    <form method="post" enctype="multipart/form-data">
+      {%csrf_token%}
       <div>
-          <h2>{{movie}}</h2>
-        <details>
-          <summary>More...</summary>
-          <h3>{{movie.imdbRating}}</h3>
-          <p>{{movie.description}}</p>
-        </dedetails>
+      {{form}}
       </div>
-          {%endfor%}
+      <button type="submit">Add</button>
+    </form>
   </body>
 </html>

@@ -1,7 +1,52 @@
-p {
-  color:red;
+body{
+  background-color:#FFFFF0;
 }
-
-ul{
-  color:blue;
+h1{
+  color:#E96B39;
+  position: relative; left: 10%
+}
+h2{
+  color:#B87333;
+  position: relative; left: 5%
+}
+h3{
+  color:#906030;
+  position: relative; left: 6%
+}
+p {
+  color:#7A7D80;
+  width: 400px;
+  position: relative; left: 6%
+}
+summary{
+  color:#7A7D80;
+  width: 400px;
+  position: relative; left: 6%
+}
+img{
+  background-color: #FFFFF0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#FFFFF0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: #B87333;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color:#CCCC99;
 }

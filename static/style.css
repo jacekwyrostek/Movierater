@@ -1,6 +1,12 @@
 body{
   background-color:#FFFFF0;
 }
+button{
+  position: relative; left: 50%
+}
+input{
+  position: relative; left: 50%
+}
 h1{
   color:#E96B39;
   position: relative; left: 10%
@@ -18,6 +24,12 @@ p {
   width: 400px;
   position: relative; left: 6%
 }
+form{
+  color:#7A7D80;
+  width: 400px;
+  position: relative; left: 6%
+}
+
 summary{
   color:#7A7D80;
   width: 400px;

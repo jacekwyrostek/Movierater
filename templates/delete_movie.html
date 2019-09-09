@@ -1,0 +1,18 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+    <title></title>
+  </head>
+  <body>
+    <h1>Do you want remove {{movie.name}}??</h1>
+    <form method="post">
+      <input type="button" value="No" onclick="window.location.href='http://127.0.0.1:8000/main/list/'" />
+      {%csrf_token%}
+      <button type="submit">Yes</button>
+    </form>
+
+  </body>
+</html>

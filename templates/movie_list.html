@@ -28,11 +28,18 @@
           <summary>More...</summary>
           <h3>{{movie.imdbRating}}</h3>
           <p>{{movie.description}}</p>
+          <form>
+            <ul>
+              <li>
+                <a href="http://127.0.0.1:8000/main/edit/{{movie.id}}">Edit</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:8000/main/delete/{{movie.id}}">Delete</a>
+              </li>
+            </ul>
+          </form>
         </dedetails>
       </div>
-      <li>
-        <a href="http://127.0.0.1:8000/main/edit/{{movie.id}}">Edit</a>
-      </li>
           {%endfor%}
   </body>
 </html>

@@ -21,3 +21,9 @@ def editMovie(request, id):
         form.save()
         return redirect(movieList)
     return render(request, 'movie_form.html', {'form':form})
+def deleteMovie(request, id):
+    movie=get_object_or_404(Movie, pk=id)
+    if request.method=='POST':
+        movie.delete()
+        return redirect(movieList)
+    return render(request, 'delete_movie.html', {'movie':movie})

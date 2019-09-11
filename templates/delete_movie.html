@@ -6,10 +6,23 @@
     <link rel="stylesheet" href="{%static 'style.css'%}">
     <title></title>
   </head>
+  <header>
+    <ul>
+      <li>
+        <img src="https://www.freeiconspng.com/uploads/movie-icon-2.png" alt="Movie" height=50px>
+      </li>
+      <li>
+        <a href="{% url 'movieList' %}">MovieRater</a>
+      </li>
+      <li>
+        <a href="{% url 'addMovie' %}">Add New Movie</a>
+      </li>
+    </ul>
+  </header>
   <body>
     <h1>Do you want remove {{movie.name}}??</h1>
     <form method="post">
-      <input type="button" value="No" onclick="window.location.href='http://127.0.0.1:8000/main/list/'" />
+      <input type="button" value="No" onclick="window.location.href='{% url 'movieList'%}'" />
       {%csrf_token%}
       <button type="submit">Yes</button>
     </form>

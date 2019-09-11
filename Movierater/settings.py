@@ -123,3 +123,5 @@ STATICFILES_DIRS = ['static']
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'media'
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'movieList'

@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrapform',
     'main',
 ]
 
@@ -125,3 +126,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = 'media'
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'movieList'
+LOGOUT_REDIRECT_URL = 'login'
